@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    background-color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    color: plum;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: plum;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ceci centre horizontalement les éléments enfants */
+    justify-content: center; 
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    padding-bottom: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid plum;
+    padding: 1rem 1.5rem;  
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    word-wrap: break-word;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+table, input, label {
+    margin-bottom: 10px;
+}
+
+input, label {
+    display: block;
+    margin-top: 10px;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+a:not(nav a) {
+    color: plum;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: larger;
+}
+
+a:not(nav a):hover {
+    color: lightblue;
+}
+
+img {
+    width: 100%;
+    height: 600px;
+}
+
+form {
+    width: 200px;
+    margin: 0 auto;
+}
+
+input[type=submit] {
+    background-color: plum;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: auto;
+}
+
+input[type=submit]:hover {
+    background-color: lightblue;
+}
+
+.delete-form {
+    display: flex;
+    justify-content: center;
+}
+
+.show-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;             
+    margin-left: auto;      
+    margin-right: auto;     
+}
